@@ -17,11 +17,12 @@ The game has 81 boxes in rows and columns of 9.  Some of the 81 boxes will be pr
 - Player must be able to complete a full sudoku puzzle 
 - Game must alert player to incorrect number placements
 - Game must have a pop up message if the player solves the puzzle.
+- Game has a row/box tracker based on where you click on the board.
 
 ### Post-MVP Plans
 
 - Adding in the candidate numbers
-- Adding a more elaborate pop up message
+- Adding a more elaborate pop up message that contains more information (i.e. time, win percentage, # of puzzles played)
 - Maybe having easy medium and hard puzzles 
 
 ## Project Planning
