@@ -2,15 +2,9 @@
 
 # NYU-SD-01 Milestone Project: Planning
 
-_Before you start programming your project_... plan it!
-
-Complete the planning sections below and include them in the README.md of your project repository. Once you're done, reach out to your instructional staff -- they'll examine your plan, help you scope it appropriately for the tools available to you and think ahead toward technical solutions, and point out any areas that could use any more thought. _Use the template below!_
-
---------
-
 ## Project Description
 
-I want to design a sudoku board.  The board will be 9x9 with as well as 3x3 with numbers autopopulated in the smaller boxes. The player will fill in the remaining boxes until the puzzle is solved correctly. 
+I want to design a sudoku board.  The board will be 9x9 with as well as 3x3 with numbers pre-populated/autopopulated in the smaller boxes. The player will fill in the remaining boxes until the puzzle is solved correctly. 
 
 ## Game Logic
 
@@ -20,15 +14,15 @@ The game has 81 boxes in rows and columns of 9.  Some of the 81 boxes will be pr
 
 ### MVP Criteria
 
-- player must be able to complete a full sudoku puzzle 
-- game must alert player to incorrect number placements
-- game must have a pop up message if the player solves the puzzle.
+- Player must be able to complete a full sudoku puzzle 
+- Game must alert player to incorrect number placements
+- Game must have a pop up message if the player solves the puzzle.
 
 ### Post-MVP Plans
 
 - Adding in the candidate numbers
-- adding a more elaborate pop up message
-- maybe having easy medium and hard puzzles 
+- Adding a more elaborate pop up message
+- Maybe having easy medium and hard puzzles 
 
 ## Project Planning
 
