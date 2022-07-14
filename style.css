@@ -1,0 +1,12 @@
+
+
+.table{
+    border: 1px solid black;/* create border around the table */
+    border-collapse:collapse; /*this line of code collapses the separated borders into one */
+    width: 60%
+}
+
+td{
+    border: 1px solid black; /*create border around the cells*/
+} 
+
