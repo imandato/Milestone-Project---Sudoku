@@ -28,14 +28,21 @@
 
 
 
+let inputArray = []
 
+function getValue(){
+    // this.value = parseFloat(this.value).toFixed(1);
+    let inputValue = document.getElementById('input-1').value
+    inputArray.push(inputValue)
+    console.log(inputValue)
+}
 
+function getValue2(){
+    // this.value = parseFloat(this.value).toFixed(1)
 
-// function getValue(){
-//     this.value = parseFloat(this.value).toFixed(1);
-//     let inputValue = document.getElementById('input-1').value
-//     inputArray.push(inputValue)
-//     console.log(inputValue)
-// }
+    let inputValue2 = document.getElementById('input-2').value
+    inputArray.push(inputValue2)
+    console.log(inputValue2)
+}
 
-
+console.log(inputArray)
