@@ -1,4 +1,4 @@
-let solution = [3,8,5,2,6,1,8,4,7]
+let solution = ["3","8","5","2","6","1","8","4","7"]
 
 // let inputArray = []
 
@@ -32,11 +32,12 @@ function getValue(){
     return inputArray
 }
 
-
+// Geeks for Geeks: https://www.geeksforgeeks.org/how-to-compare-two-arrays-in-javascript/
+// this code allowed me to convert the array into strings so that they could be compared using an equalizer
 
 function checkSolution(){
-    // let dataArray = getValue()
-    let dataArray = [3,8,5,2,6,1,8,4,7]
+    let dataArray = getValue()
+    // let dataArray = [3,8,5,2,6,1,8,4,7]
     console.log(JSON.stringify(dataArray))
     console.log(JSON.stringify(solution))
     if (JSON.stringify(solution) == JSON.stringify(dataArray)){
@@ -53,10 +54,7 @@ function checkSolution(){
     
 }
 
-let solutionCheck = checkSolution()
 
-console.log(solutionCheck)
-
-// let submitButton = document.getElementById("submit-button");
-// submitButton.addEventListener("click", checkSolution());
+let submitButton = document.getElementById("submit-button");
+submitButton.addEventListener("click", checkSolution);
 
