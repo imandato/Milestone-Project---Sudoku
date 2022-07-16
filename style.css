@@ -1,12 +1,26 @@
 
-
+/* W3 Schools: https://www.w3schools.com/cssref/pr_border-collapse.asp */
+/* How to create one border for the table */
 .table{
     border: 1px solid black;/* create border around the table */
     border-collapse:collapse; /*this line of code collapses the separated borders into one */
-    width: 60%
+    width: 60%;
 }
+
 
 td{
     border: 1px solid black; /*create border around the cells*/
-} 
+    /* background-color:#f0f; highlight problems */
+    padding:0;
+    width: 30%;
+}  
 
+input {
+    display:block;
+    width:100%;
+    border-style: none;
+  }
+
+  input:focus {
+    outline: none /* Removes the border when the input is clicked */
+  }
