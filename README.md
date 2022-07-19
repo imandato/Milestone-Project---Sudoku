@@ -15,13 +15,13 @@ The game has 81 boxes in rows and columns of 9.  Some of the 81 boxes will be pr
 ### MVP Criteria
 
 - Player must be able to complete a full sudoku puzzle 
-- Game must alert player to incorrect number placements
 - Game must have a pop up message if the player solves the puzzle.
 - Game has a row/box tracker based on where you click on the board.
 
 ### Post-MVP Plans
 
 - Adding in the candidate numbers
+- Game can alert player to incorrect number placements
 - Adding a more elaborate pop up message that contains more information (i.e. time, win percentage, # of puzzles played)
 - Maybe having easy medium and hard puzzles 
 
