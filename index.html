@@ -9,113 +9,138 @@
 </head>
 
 <body>
-    <!-- Table to create the sudoku board -->
-    <table class="table" id="table">
-        <tr id="row1">
-            <!-- box ids first digit = row, second digit = column -->
-            <!-- StackOverflow: https://stackoverflow.com/questions/574941/best-way-to-track-onchange-as-you-type-in-input-type-text -->
-            <!-- Using oninput to alert the javascript to run the function whenever the input is changed by the user -->
-            <td id="td1-1"><input id="input-1" type="text"  value = "" oninput="getValue()"></td>
-            <td id="td1-2"><input id="input-2" type="text"  value = "" oninput="getValue()"></td>
-            <td id="td1-3"><input id="input-3" type="text"  value = "" oninput="getValue()"></td>
-            <td id="td1-4"><input id="input-4" type="text"  value = "" oninput="getValue()"></td>
-            <td id="td1-5"><input id="input-5" type="text"  value = "" oninput="getValue()"></td>
-            <td id="td1-6"><input id="input-6" type="text"  value = "" oninput="getValue()"></td>
-            <td id="td1-7"><input id="input-7" type="text"  value = "" oninput="getValue()"></td>
-            <td id="td1-8"><input id="input-8" type="text"  value = "" oninput="getValue()"></td>
-            <td id="td1-9"><input id="input-9" type="text"  value = "" oninput="getValue()"></td>
-        </tr>
-        <tr id="row2">
-            <td id="td2-1"><input id="input-10" type="text" value = "" oninput="getValue()"></td>
-            <td id="td2-2"><input id="input-11" type="text" value = "" oninput="getValue()"></td>
-            <td id="td2-3"><input id="input-12" type="text" value = "" oninput="getValue()"></td>
-            <td id="td2-4"><input id="input-13" type="text" value = "" oninput="getValue()"></td>
-            <td id="td2-5"><input id="input-14" type="text" value = "" oninput="getValue()"></td>
-            <td id="td2-6"><input id="input-15" type="text" value = "" oninput="getValue()"></td>
-            <td id="td2-7"><input id="input-16" type="text" value = "" oninput="getValue()"></td>
-            <td id="td2-8"><input id="input-17" type="text" value = "" oninput="getValue()"></td>
-            <td id="td2-9"><input id="input-18" type="text" value = "" oninput="getValue()"></td>
-        </tr>
-        <tr id="row3">
-            <td id="td3-1"><input id="input-19" type="text" value = "" oninput="getValue()"></td>
-            <td id="td3-2"><input id="input-20" type="text" value = "" oninput="getValue()"></td>
-            <td id="td3-3"><input id="input-21" type="text" value = "" oninput="getValue()"></td>
-            <td id="td3-4"><input id="input-22" type="text" value = "" oninput="getValue()"></td>
-            <td id="td3-5"><input id="input-23" type="text" value = "" oninput="getValue()"></td>
-            <td id="td3-6"><input id="input-24" type="text" value = "" oninput="getValue()"></td>
-            <td id="td3-7"><input id="input-25" type="text" value = "" oninput="getValue()"></td>
-            <td id="td3-8"><input id="input-26" type="text" value = "" oninput="getValue()"></td>
-            <td id="td3-9"><input id="input-27" type="text" value = "" oninput="getValue()"></td>
-        </tr>
-        <tr id="row4">
-            <td id="td4-1"><input id="input-28" type="text" value = "" oninput="getValue()"></td>
-            <td id="td4-2"><input id="input-29" type="text" value = "" oninput="getValue()"></td>
-            <td id="td4-3"><input id="input-30" type="text" value = "" oninput="getValue()"></td>
-            <td id="td4-4"><input id="input-31" type="text" value = "" oninput="getValue()"></td>
-            <td id="td4-5"><input id="input-32" type="text" value = "" oninput="getValue()"></td>
-            <td id="td4-6"><input id="input-33" type="text" value = "" oninput="getValue()"></td>
-            <td id="td4-7"><input id="input-34" type="text" value = "" oninput="getValue()"></td>
-            <td id="td4-8"><input id="input-35" type="text" value = "" oninput="getValue()"></td>
-            <td id="td4-9"><input id="input-36" type="text" value = "" oninput="getValue()"></td>
-        </tr>
-        <tr id="row5">
-            <td id="td5-1"><input id="input-37" type="text" value = "" oninput="getValue()"></td>
-            <td id="td5-2"><input id="input-38" type="text" value = "" oninput="getValue()"></td>
-            <td id="td5-3"><input id="input-39" type="text" value = "" oninput="getValue()"></td>
-            <td id="td5-4"><input id="input-40" type="text" value = "" oninput="getValue()"></td>
-            <td id="td5-5"><input id="input-41" type="text" value = "" oninput="getValue()"></td>
-            <td id="td5-6"><input id="input-42" type="text" value = "" oninput="getValue()"></td>
-            <td id="td5-7"><input id="input-43" type="text" value = "" oninput="getValue()"></td>
-            <td id="td5-8"><input id="input-44" type="text" value = "" oninput="getValue()"></td>
-            <td id="td5-9"><input id="input-45" type="text" value = "" oninput="getValue()"></td>
-        </tr>
-        <tr id="row6">
-            <td id="td6-1"><input id="input-46" type="text" value = "" oninput="getValue()"></td>
-            <td id="td6-2"><input id="input-47" type="text" value = "" oninput="getValue()"></td>
-            <td id="td6-3"><input id="input-48" type="text" value = "" oninput="getValue()"></td>
-            <td id="td6-4"><input id="input-49" type="text" value = "" oninput="getValue()"></td>
-            <td id="td6-5"><input id="input-50" type="text" value = "" oninput="getValue()"></td>
-            <td id="td6-6"><input id="input-51" type="text" value = "" oninput="getValue()"></td>
-            <td id="td6-7"><input id="input-52" type="text" value = "" oninput="getValue()"></td>
-            <td id="td6-8"><input id="input-53" type="text" value = "" oninput="getValue()"></td>
-            <td id="td6-9"><input id="input-54" type="text" value = "" oninput="getValue()"></td>
-        </tr>
-        <tr id="row7">
-            <td id="td7-1"><input id="input-55" type="text" value = "" oninput="getValue()"></td>
-            <td id="td7-2"><input id="input-56" type="text" value = "" oninput="getValue()"></td>
-            <td id="td7-3"><input id="input-57" type="text" value = "" oninput="getValue()"></td>
-            <td id="td7-4"><input id="input-58" type="text" value = "" oninput="getValue()"></td>
-            <td id="td7-5"><input id="input-59" type="text" value = "" oninput="getValue()"></td>
-            <td id="td7-6"><input id="input-60" type="text" value = "" oninput="getValue()"></td>
-            <td id="td7-7"><input id="input-61" type="text" value = "" oninput="getValue()"></td>
-            <td id="td7-8"><input id="input-62" type="text" value = "" oninput="getValue()"></td>
-            <td id="td7-9"><input id="input-63" type="text" value = "" oninput="getValue()"></td>
-        </tr>
-        <tr id="row8">
-            <td id="td8-1"><input id="input-64" type="text" value = "" oninput="getValue()"></td>
-            <td id="td8-2"><input id="input-65" type="text" value = "" oninput="getValue()"></td>
-            <td id="td8-3"><input id="input-66" type="text" value = "" oninput="getValue()"></td>
-            <td id="td8-4"><input id="input-67" type="text" value = "" oninput="getValue()"></td>
-            <td id="td8-5"><input id="input-68" type="text" value = "" oninput="getValue()"></td>
-            <td id="td8-6"><input id="input-69" type="text" value = "" oninput="getValue()"></td>
-            <td id="td8-7"><input id="input-70" type="text" value = "" oninput="getValue()"></td>
-            <td id="td8-8"><input id="input-71" type="text" value = "" oninput="getValue()"></td>
-            <td id="td8-9"><input id="input-72" type="text" value = "" oninput="getValue()"></td>
-        </tr>
-        <tr id="row9">
-            <td id="td9-1"><input id="input-73" type="text" value = "" oninput="getValue()"></td>
-            <td id="td9-2"><input id="input-74" type="text" value = "" oninput="getValue()"></td>
-            <td id="td9-3"><input id="input-75" type="text" value = "" oninput="getValue()"></td>
-            <td id="td9-4"><input id="input-76" type="text" value = "" oninput="getValue()"></td>
-            <td id="td9-5"><input id="input-77" type="text" value = "" oninput="getValue()"></td>
-            <td id="td9-6"><input id="input-78" type="text" value = "" oninput="getValue()"></td>
-            <td id="td9-7"><input id="input-79" type="text" value = "" oninput="getValue()"></td>
-            <td id="td9-8"><input id="input-80" type="text" value = "" oninput="getValue()"></td>
-            <td id="td9-9"><input id="input-81" type="text" value = "" oninput="getValue()"></td>
-        </tr>
-    </table>
+    <div class="main-container">
+        <h1>Sudoku</h1>
+        <div class="container">
+            <!-- Table to create the sudoku board -->
+            <table class="table" id="table">
+                <tr id="row1">
+                    <!-- box ids first digit = row, second digit = column -->
+                    <!-- StackOverflow: https://stackoverflow.com/questions/574941/best-way-to-track-onchange-as-you-type-in-input-type-text -->
+                    <!-- Using oninput to alert the javascript to run the function whenever the input is changed by the user -->
+                    <td id="td1-1"><input id="input-1" type="text"  value = "" oninput="getValue()"></td>
+                    <td id="td1-2"><input id="input-2" type="text"  value = "" oninput="getValue()"></td>
+                    <td id="td1-3"><input id="input-3" type="text"  value = "" oninput="getValue()"></td>
+                    <td id="td1-4"><input id="input-4" type="text"  value = "" oninput="getValue()"></td>
+                    <td id="td1-5"><input id="input-5" type="text"  value = "" oninput="getValue()"></td>
+                    <td id="td1-6"><input id="input-6" type="text"  value = "" oninput="getValue()"></td>
+                    <td id="td1-7"><input id="input-7" type="text"  value = "" oninput="getValue()"></td>
+                    <td id="td1-8"><input id="input-8" type="text"  value = "" oninput="getValue()"></td>
+                    <td id="td1-9"><input id="input-9" type="text"  value = "" oninput="getValue()"></td>
+                </tr>
+                <tr id="row2">
+                    <td id="td2-1"><input id="input-10" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td2-2"><input id="input-11" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td2-3"><input id="input-12" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td2-4"><input id="input-13" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td2-5"><input id="input-14" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td2-6"><input id="input-15" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td2-7"><input id="input-16" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td2-8"><input id="input-17" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td2-9"><input id="input-18" type="text" value = "" oninput="getValue()"></td>
+                </tr>
+                <tr id="row3">
+                    <td id="td3-1"><input id="input-19" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td3-2"><input id="input-20" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td3-3"><input id="input-21" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td3-4"><input id="input-22" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td3-5"><input id="input-23" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td3-6"><input id="input-24" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td3-7"><input id="input-25" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td3-8"><input id="input-26" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td3-9"><input id="input-27" type="text" value = "" oninput="getValue()"></td>
+                </tr>
+                <tr id="row4">
+                    <td id="td4-1"><input id="input-28" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td4-2"><input id="input-29" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td4-3"><input id="input-30" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td4-4"><input id="input-31" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td4-5"><input id="input-32" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td4-6"><input id="input-33" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td4-7"><input id="input-34" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td4-8"><input id="input-35" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td4-9"><input id="input-36" type="text" value = "" oninput="getValue()"></td>
+                </tr>
+                <tr id="row5">
+                    <td id="td5-1"><input id="input-37" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td5-2"><input id="input-38" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td5-3"><input id="input-39" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td5-4"><input id="input-40" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td5-5"><input id="input-41" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td5-6"><input id="input-42" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td5-7"><input id="input-43" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td5-8"><input id="input-44" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td5-9"><input id="input-45" type="text" value = "" oninput="getValue()"></td>
+                </tr>
+                <tr id="row6">
+                    <td id="td6-1"><input id="input-46" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td6-2"><input id="input-47" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td6-3"><input id="input-48" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td6-4"><input id="input-49" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td6-5"><input id="input-50" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td6-6"><input id="input-51" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td6-7"><input id="input-52" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td6-8"><input id="input-53" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td6-9"><input id="input-54" type="text" value = "" oninput="getValue()"></td>
+                </tr>
+                <tr id="row7">
+                    <td id="td7-1"><input id="input-55" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td7-2"><input id="input-56" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td7-3"><input id="input-57" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td7-4"><input id="input-58" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td7-5"><input id="input-59" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td7-6"><input id="input-60" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td7-7"><input id="input-61" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td7-8"><input id="input-62" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td7-9"><input id="input-63" type="text" value = "" oninput="getValue()"></td>
+                </tr>
+                <tr id="row8">
+                    <td id="td8-1"><input id="input-64" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td8-2"><input id="input-65" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td8-3"><input id="input-66" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td8-4"><input id="input-67" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td8-5"><input id="input-68" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td8-6"><input id="input-69" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td8-7"><input id="input-70" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td8-8"><input id="input-71" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td8-9"><input id="input-72" type="text" value = "" oninput="getValue()"></td>
+                </tr>
+                <tr id="row9">
+                    <td id="td9-1"><input id="input-73" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td9-2"><input id="input-74" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td9-3"><input id="input-75" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td9-4"><input id="input-76" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td9-5"><input id="input-77" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td9-6"><input id="input-78" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td9-7"><input id="input-79" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td9-8"><input id="input-80" type="text" value = "" oninput="getValue()"></td>
+                    <td id="td9-9"><input id="input-81" type="text" value = "" oninput="getValue()"></td>
+                </tr>
+            </table>
+            <div class="controls">
+                <div class="buttons-1">
+                    <button id="button1">1</button>
+                    <button id="button2">2</button>
+                    <button id="button3">3</button>
+                </div>
+                <div class="buttons-2">
+                    <button id="button4">4</button>
+                    <button id="button5">5</button>
+                    <button id="button6">6</button>
+                </div>
+                <div class="buttons-3">
+                    <button id="button7">7</button>
+                    <button id="button8">8</button>
+                    <button id="button9">9</button>
+                </div>
+                <div class="submit">
+                    <button id="submit-button">Submit Answer</button>
+                </div>
+            </div>
 
-    <button id="submit-button">Submit Answer</button>
+        </div>
+    </div>
+    
     <script src="./script.js"></script>
 </body>
 </html>
