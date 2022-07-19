@@ -1,32 +1,11 @@
-let solution = ["3","8","5","2","6","1","8","4","7"]
-
-// let inputArray = []
-
-// function getValue(){
-//     // this.value = parseFloat(this.value).toFixed(1);
-//     let inputValue = document.getElementById('input-1').value
-//     inputArray.push(inputValue)
-//     console.log(inputValue)
-// }
-
-// function getValue2(){
-//     // this.value = parseFloat(this.value).toFixed(1)
-
-//     let inputValue2 = document.getElementById('input-2').value
-//     inputArray.push(inputValue2)
-//     console.log(inputValue2)
-// }
-
-// console.log(inputArray)s
+let solution = ["5","6","2","8","3","1","9","4","7","4","8","7","9","6","2","3","1","5","9","1","3","4","5","7","6","8","2","1","7","8","2","9","6","4","5","3","3","2","9","5","4","8","7","6","1","6","4","5","7","1","3","2","9","8","8","9","4","3","7","5","1","2","6","7","5","6","1","2","4","8","3","9","2","3","1","6","8","9","5","7","4"]
 
 function getValue(){
     let inputArray = []
-    for (let i = 1; i <= 9; i++){
+    for (let i = 1; i <= 81; i++){
         let inputValue = document.getElementById(`input-${i}`).value
         inputArray.push(inputValue)
         console.log(inputValue) 
-        // console.log(inputArray)
-        // console.log(`input-${i}`)
     }
     console.log(inputArray)
     return inputArray
@@ -37,7 +16,6 @@ function getValue(){
 
 function checkSolution(){
     let dataArray = getValue()
-    // let dataArray = [3,8,5,2,6,1,8,4,7]
     console.log(JSON.stringify(dataArray))
     console.log(JSON.stringify(solution))
     if (JSON.stringify(solution) == JSON.stringify(dataArray)){
@@ -48,10 +26,6 @@ function checkSolution(){
         return false 
         
     }
-    // for (let i=0; i<= solution.length; i++){
-       
-    // }
-    
 }
 
 
