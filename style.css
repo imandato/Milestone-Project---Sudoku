@@ -1,15 +1,18 @@
 
 /* W3 Schools: https://www.w3schools.com/cssref/pr_border-collapse.asp */
-/* How to create one border for the table */
+/* Used this code to create one border for the table */
+
+/* W3 Schools: https://www.w3schools.com/howto/howto_css_table_center.asp */
+/* Used this code to center the table */
 .table{
     border: 6px solid black;/* creates a black border around the table */
-    border-collapse:collapse;
-     /*this line of code collapses the separated borders into one */
-    /* width: 60%; */
+    border-collapse:collapse; /*this line of code collapses the separated borders into one */
+    margin-left:auto;
+    margin-right:auto;
 }
 
 /* BruBaker: "Responsive Table Cells with Equal Height and Width - CSS Only": https://brubakerservices.org/responsive-table-cells-equal-height-width-css/ */
-
+/* Used the code above to create a square grid */
 td{
     border: 4px solid gray; /*create border around the cells*/
     /* background-color:#f0f; highlight problems */
