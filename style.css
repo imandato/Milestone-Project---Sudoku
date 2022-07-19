@@ -2,28 +2,58 @@
 /* W3 Schools: https://www.w3schools.com/cssref/pr_border-collapse.asp */
 /* How to create one border for the table */
 .table{
-    border: 1px solid black;/* create border around the table */
-    border-collapse:collapse; /*this line of code collapses the separated borders into one */
+    border: 6px solid black;/* creates a black border around the table */
+    border-collapse:collapse;
+     /*this line of code collapses the separated borders into one */
     /* width: 60%; */
 }
 
 /* BruBaker: "Responsive Table Cells with Equal Height and Width - CSS Only": https://brubakerservices.org/responsive-table-cells-equal-height-width-css/ */
 
 td{
-    border: 1px solid black; /*create border around the cells*/
+    border: 4px solid gray; /*create border around the cells*/
     /* background-color:#f0f; highlight problems */
     padding:0;
     width: 3vw;
     height: 3vw;
 }  
 
-input {
-    display:block;
-    width:100%;
-    height: 100%;
-    border-style: none;
-  }
+tr:last-child td{
+  border-bottom: none;
+}
 
-  input:focus {
-    outline: none /* Removes the border when the input is clicked */
-  }
+tr:first-child td {
+  border-top: none;
+}
+
+
+
+/* this code gets rid fo the automatic styling of the input boxes and has the input box span the width of the box */
+input {
+  display:block;
+  width:100%;
+  height: 100%;
+  border-style: none;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* This code gets rid of the focus/blue border that appears when an input is clicked */
+input:focus {
+  outline: none /* Removes the border when the input is clicked */
+}
+
+/* #td1-1,#td2-1,#td3-1,#td4-1,#td5-1,#td6-1,#td7-1,#td8-1,#td9-1{
+  border-left: black;
+}
+
+#td1-9,#td2-9,#td3-9,#td4-9,#td5-9,#td6-9,#td7-9,#td8-9,#td9-9{
+  border-right: black;
+}
+
+#td1-1,#td1-2,#td1-3,#td1-4,#td1-5,#td1-6,#td1-7,#td1-8,#td1-9{
+  border-top: black;
+} */
+
+
