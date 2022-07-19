@@ -10,7 +10,7 @@ I want to design a sudoku board.  The board will be 9x9 with as well as 3x3 with
 
 The game has 81 boxes in rows and columns of 9.  Some of the 81 boxes will be pre-populated (hopefully auto-populated) with numbers. The numbers in each row and column must add up to 9.  Numbers cannot be repeated in each row/column.  They can also not be repeated in each box of 9.  Ideally the game will alert players when they are placing a number that is either in the box or row/column already, but at a minimum will allow players to play a traditional game of sudoku without feedback.  If possible would also like to have a way to keep track of candidate numbers that the player inputs.  Once the puzzle is solved I want the user to receive an alert (maybe through a cool graphic/ pop up message) that at a minimum tells them they've solved the puzzle and at a maximum includes their time, their win percentage, and the number of puzzles played.
 
-##Deliverables
+## Deliverables
 
 ### MVP Criteria
 
