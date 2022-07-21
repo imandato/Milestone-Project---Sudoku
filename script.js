@@ -32,20 +32,12 @@ function checkSolution(){
 }
 
 function clearBoard(){
-    // inputArray = []
-    // getValue()
-    inputArray = []
-    console.log(inputArray)
-    console.log("clicked")
-    // let userInput = document.getElementsByTagName("input")
-    // userInput.value = ""
     let userInput = document.getElementsByClassName("userinput")
 
     for (let i = 0; i < userInput.length; i++){
         if (userInput[i].type == "text"){
             userInput[i].value = ""
         }
-        // console.log(inputValue)
     }
 }
 

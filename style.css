@@ -14,7 +14,7 @@ h1{
   font-size: 50px;
 }
 
-.container {
+.container1 {
   display: flex;
   margin: auto;
 }
@@ -62,18 +62,23 @@ input {
 
 /* This code gets rid of the focus/blue border that appears when an input is clicked */
 input:focus {
-  outline: none /* Removes the border when the input is clicked */
+  outline: none ;/* Removes the border when the input is clicked */
+  background-color: lightgray;
 }
 
 input:hover{
   background-color: lightgray;
 }
 
+
 #input-1,#input-2,#input-3,#input-10,#input-11,#input-12,#input-19,#input-20,#input-21{
   background-color: #F2D4D7;
 }
 
 #input-1:hover,#input-2:hover,#input-3:hover,#input-10:hover,#input-11:hover,#input-12:hover,#input-19:hover,#input-20:hover,#input-21:hover{
+  background-color: lightgray;
+}
+#input-1:focus,#input-2:focus,#input-3:focus,#input-10:focus,#input-11:focus,#input-12:focus,#input-19:focus,#input-20:focus,#input-21:focus{
   background-color: lightgray;
 }
 
@@ -85,11 +90,19 @@ input:hover{
   background-color: lightgray;
 }
 
+#input-7:focus,#input-8:focus,#input-9:focus,#input-16:focus,#input-17:focus,#input-18:focus,#input-25:focus,#input-26:focus,#input-27:focus{
+  background-color: lightgray;
+}
+
 #input-31,#input-32,#input-33,#input-40,#input-41,#input-42,#input-49,#input-50,#input-51{
   background-color: #F2D4D7;
 }
 
 #input-31:hover,#input-32:hover,#input-33:hover,#input-40:hover,#input-41:hover,#input-42:hover,#input-49:hover,#input-50:hover,#input-51:hover{
+  background-color: lightgray;
+}
+
+#input-31:focus,#input-32:focus,#input-33:focus,#input-40:focus,#input-41:focus,#input-42:focus,#input-49:focus,#input-50:focus,#input-51:focus{
   background-color: lightgray;
 }
 
@@ -101,6 +114,10 @@ input:hover{
   background-color: lightgray;
 }
 
+#input-55:focus,#input-56:focus,#input-57:focus,#input-64:focus,#input-65:focus,#input-66:focus,#input-73:focus,#input-74:focus,#input-75:focus{
+  background-color: lightgray;
+}
+
 #input-61,#input-62,#input-63,#input-70,#input-71,#input-72,#input-79,#input-80,#input-81{
   background-color: #F2D4D7;
 }
@@ -109,13 +126,50 @@ input:hover{
   background-color: lightgray;
 }
 
-.controls {
+#input-61:focus,#input-62:focus,#input-63:focus,#input-70:focus,#input-71:focus,#input-72:focus,#input-79:focus,#input-80:focus,#input-81:focus{
+  background-color: lightgray;
+}
+
+.container2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 30%;
   /* background-color: green; */
 }
+
+.ruletitle{
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.rulecontainer{
+  display: flex;
+  align-content: center;
+}
+
+.numbers{
+  /* background-color: blue; */
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+.rules{
+  padding: 20px;
+  /* background-color: red; */
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 20px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+
+
 
 button{
   height: 50px;

@@ -11,7 +11,7 @@
 <body>
     <div class="main-container">
         <h1>Sudoku</h1>
-        <div class="container">
+        <div class="container1">
             <!-- Table to create the sudoku board -->
             <table class="table" id="table">
                 <tr id="row1">
@@ -119,8 +119,23 @@
                     <td id="td9-9"><input class="readonly" id="input-81" type="text" value = "4" readonly></td>
                 </tr>
             </table>
-            <div class="controls">
-                <div class="buttons-1">
+            <div class="container2">
+                <div class="ruletitle">Rules</div>
+                <div class="rules">
+                    Each row must contain the numbers from 1 to 9, without repetitions.
+                </div>
+                <div class="rules">
+                    Each column must contain the numbers from 1 to 9, without repetitions.
+                </div>
+                <div class="rules">
+                    The numbers can only occur once per block.
+                </div>
+                <div class="rules">
+                    The sum of every single row, column and nonet must equal 45
+                </div>
+                
+                
+                <!-- <div class="buttons-1">
                     <button id="button1">1</button>
                     <button id="button2">2</button>
                     <button id="button3">3</button>
@@ -134,7 +149,7 @@
                     <button id="button7">7</button>
                     <button id="button8">8</button>
                     <button id="button9">9</button>
-                </div>
+                </div> -->
                 <div class="submit">
                     <button id="submit-button">Submit Answer</button>
                 </div>
