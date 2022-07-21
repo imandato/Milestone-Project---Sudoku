@@ -51,8 +51,13 @@ input {
   height: 100%;
   border-style: none;
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 500;
   text-align: center;
+}
+
+.readonly{
+  font-size: 30px;
+  font-weight: 700;
 }
 
 /* This code gets rid of the focus/blue border that appears when an input is clicked */
@@ -61,50 +66,48 @@ input:focus {
 }
 
 input:hover{
-  background-color: yellow;
+  background-color: lightgray;
 }
 
 #input-1,#input-2,#input-3,#input-10,#input-11,#input-12,#input-19,#input-20,#input-21{
-  background-color: lightgray;
+  background-color: #F2D4D7;
 }
 
 #input-1:hover,#input-2:hover,#input-3:hover,#input-10:hover,#input-11:hover,#input-12:hover,#input-19:hover,#input-20:hover,#input-21:hover{
-  background-color: yellow;
+  background-color: lightgray;
 }
 
 #input-7,#input-8,#input-9,#input-16,#input-17,#input-18,#input-25,#input-26,#input-27{
-  background-color: lightgray;
+  background-color: #F2D4D7;
 }
 
 #input-7:hover,#input-8:hover,#input-9:hover,#input-16:hover,#input-17:hover,#input-18:hover,#input-25:hover,#input-26:hover,#input-27:hover{
-  background-color: yellow;
+  background-color: lightgray;
 }
 
 #input-31,#input-32,#input-33,#input-40,#input-41,#input-42,#input-49,#input-50,#input-51{
-  background-color: lightgray;
+  background-color: #F2D4D7;
 }
 
 #input-31:hover,#input-32:hover,#input-33:hover,#input-40:hover,#input-41:hover,#input-42:hover,#input-49:hover,#input-50:hover,#input-51:hover{
-  background-color: yellow;
+  background-color: lightgray;
 }
 
 #input-55,#input-56,#input-57,#input-64,#input-65,#input-66,#input-73,#input-74,#input-75{
-  background-color: lightgray;
+  background-color: #F2D4D7;
 }
 
 #input-55:hover,#input-56:hover,#input-57:hover,#input-64:hover,#input-65:hover,#input-66:hover,#input-73:hover,#input-74:hover,#input-75:hover{
-  background-color: yellow;
-}
-
-#input-61,#input-62,#input-63,#input-70,#input-71,#input-72,#input-79,#input-80,#input-81{
   background-color: lightgray;
 }
 
-#input-61:hover,#input-62:hover,#input-63:hover,#input-70:hover,#input-71:hover,#input-72:hover,#input-79:hover,#input-80:hover,#input-81:hover{
-  background-color: yellow;
+#input-61,#input-62,#input-63,#input-70,#input-71,#input-72,#input-79,#input-80,#input-81{
+  background-color: #F2D4D7;
 }
 
-
+#input-61:hover,#input-62:hover,#input-63:hover,#input-70:hover,#input-71:hover,#input-72:hover,#input-79:hover,#input-80:hover,#input-81:hover{
+  background-color: lightgray;
+}
 
 .controls {
   display: flex;
@@ -144,9 +147,19 @@ button{
 }
 
 #submit-button{
-  width: 200px;
+  width: 186px;
   /* margin-left: auto;
   margin-right: auto; */
+}
+
+.clear{
+  display: flex;
+  justify-content: space-around;
+}
+
+#clear-board{
+  width: 186px;
+  height: 22px;
 }
 
 
