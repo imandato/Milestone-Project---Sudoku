@@ -17,15 +17,17 @@ function getValue(){
 // this code allowed me to convert the array into strings so that they could be compared using an equalizer
 
 function checkSolution(){
-
+    let message = document.getElementById("message");
     // let dataArray = getValue()
     console.log(JSON.stringify(inputArray))
     console.log(JSON.stringify(solution))
     if (JSON.stringify(solution) == JSON.stringify(inputArray)){
         console.log("you won!")
+        message.innerHTML = "You Won!"
         return true
     }else {
         console.log("try again!")
+        message.innerHTML = "So Close... Try Again!"
         return false 
         
     }
@@ -46,3 +48,28 @@ submitButton.addEventListener("click", checkSolution);
 
 let clearButton = document.getElementById("clear-board");
 clearButton.addEventListener("click", clearBoard);
+
+// W3 Schools: https://www.w3schools.com/howto/howto_css_modals.asp
+// Used this code to help me get the modal to deploy
+
+let modal = document.getElementById("modal");
+
+
+let closeButton = document.getElementsByClassName("close-button")[0];
+
+
+submitButton.onclick = function() {
+  modal.style.display = "block";
+}
+
+closeButton.onclick = function() {
+  modal.style.display = "none";
+}
+
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+

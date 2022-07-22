@@ -1,7 +1,7 @@
 .main-container{
   display: flex;
   flex-direction: column;
-  
+  /* background-color: red; */
 }
 
 div{
@@ -29,6 +29,9 @@ h1{
     border-collapse:collapse; /*this line of code collapses the separated borders into one */
     margin-left:auto;
     margin-right:auto;
+    padding: 10px;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 /* BruBaker: "Responsive Table Cells with Equal Height and Width - CSS Only": https://brubakerservices.org/responsive-table-cells-equal-height-width-css/ */
@@ -134,7 +137,7 @@ input:hover{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 30%;
+  width: 40%;
   /* background-color: green; */
 }
 
@@ -148,6 +151,7 @@ input:hover{
 .rulecontainer{
   display: flex;
   align-content: center;
+  width: 180px;
 }
 
 .numbers{
@@ -159,6 +163,7 @@ input:hover{
 }
 .rules{
   padding: 20px;
+
   /* background-color: red; */
   text-align: center;
   font-family: sans-serif;
@@ -176,21 +181,7 @@ button{
   width: 50px;
 }
 
-.buttons-1{
-  display: flex;
-  justify-content: space-around;
-  /* background-color: yellow; */
-}
 
-.buttons-2{
-  display: flex;
-  justify-content: space-around;
-}
-
-.buttons-3{
-  display: flex;
-  justify-content: space-around;
-}
 
 .submit{
   display: flex;
@@ -204,6 +195,45 @@ button{
   width: 186px;
   /* margin-left: auto;
   margin-right: auto; */
+}
+
+/* W3 Schools: https://www.w3schools.com/howto/howto_css_modals.asp */
+/* Used some of this code as inspiration/a baseline in my css */
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(242, 212, 215,.5); 
+}
+
+.modal-content {
+  background-color: white;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 80%; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.close-button {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .clear{
