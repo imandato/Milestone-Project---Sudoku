@@ -1,7 +1,15 @@
+// Medium Board JS
+
+// Variable declarations
 let solution = ["9","1","5","3","6","4","2","7","8","8","2","7","1","9","5","6","3","4","3","4","6","7","2","8","5","9","1","4","7","3","6","1","2","9","8","5","6","5","9","8","3","7","1","4","2","1","8","2","4","5","9","7","6","3","2","3","1","9","4","6","8","5","7","7","6","4","5","8","1","3","2","9","5","9","8","2","7","3","4","1","6"]
-
 let inputArray = []
+let submitButton = document.getElementById("submit-button");
+let clearButton = document.getElementById("clear-board");
+let modal = document.getElementById("modal");
+let closeButton = document.getElementsByClassName("close-button")[0];
 
+
+// functions
 function getValue(){
     inputArray = []
     for (let i = 1; i <= 81; i++){
@@ -19,8 +27,7 @@ function getValue(){
 function checkSolution(){
     let message = document.getElementById("message");
     // let dataArray = getValue()
-    console.log(JSON.stringify(inputArray))
-    console.log(JSON.stringify(solution))
+    
     if (JSON.stringify(solution) == JSON.stringify(inputArray)){
         console.log("you won!")
         message.innerHTML = "You Won!"
@@ -33,6 +40,7 @@ function checkSolution(){
     }
 }
 
+
 function clearBoard(){
     let userInput = document.getElementsByClassName("userinput")
 
@@ -43,20 +51,16 @@ function clearBoard(){
     }
 }
 
-let submitButton = document.getElementById("submit-button");
+// buttons functionality
+
 submitButton.addEventListener("click", checkSolution);
 
-let clearButton = document.getElementById("clear-board");
 clearButton.addEventListener("click", clearBoard);
 
+
+// modal functionality
 // W3 Schools: https://www.w3schools.com/howto/howto_css_modals.asp
 // Used this code to help me get the modal to deploy
-
-let modal = document.getElementById("modal");
-
-
-let closeButton = document.getElementsByClassName("close-button")[0];
-
 
 submitButton.onclick = function() {
   modal.style.display = "block";

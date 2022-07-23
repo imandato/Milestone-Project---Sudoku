@@ -1,7 +1,15 @@
+// Easy Board JS
+
+// Variable declarations
 let solution = ["5","6","2","8","3","1","9","4","7","4","8","7","9","6","2","3","1","5","9","1","3","4","5","7","6","8","2","1","7","8","2","9","6","4","5","3","3","2","9","5","4","8","7","6","1","6","4","5","7","1","3","2","9","8","8","9","4","3","7","5","1","2","6","7","5","6","1","2","4","8","3","9","2","3","1","6","8","9","5","7","4"]
-
 let inputArray = []
+let submitButton = document.getElementById("submit-button");
+let clearButton = document.getElementById("clear-board");
+let modal = document.getElementById("modal");
+let closeButton = document.getElementsByClassName("close-button")[0];
 
+
+// functions
 function getValue(){
     inputArray = []
     for (let i = 1; i <= 81; i++){
@@ -43,20 +51,16 @@ function clearBoard(){
     }
 }
 
-let submitButton = document.getElementById("submit-button");
+// buttons functionality
+
 submitButton.addEventListener("click", checkSolution);
 
-let clearButton = document.getElementById("clear-board");
 clearButton.addEventListener("click", clearBoard);
 
+
+// modal functionality
 // W3 Schools: https://www.w3schools.com/howto/howto_css_modals.asp
 // Used this code to help me get the modal to deploy
-
-let modal = document.getElementById("modal");
-
-
-let closeButton = document.getElementsByClassName("close-button")[0];
-
 
 submitButton.onclick = function() {
   modal.style.display = "block";
