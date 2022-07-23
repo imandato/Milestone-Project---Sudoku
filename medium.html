@@ -10,7 +10,7 @@
 
 <body>
     <div class="container1">
-        <div class="tabletest">\
+        <div class="tabletest">
             <h1>Sudoku</h1>
             <!-- Table to create the sudoku board -->
             <table class="table" id="table">
@@ -128,29 +128,31 @@
         </div>
         
         <div class="container2">
-            <div class="spacing"></div>
-            <div class="ruletitle">Rules</div>
-            <div class="rules">
-                Each row must contain the numbers from 1 to 9, without repetitions.
+            <div class="rules-container">
+                <div class="spacing"></div>
+                <div class="ruletitle">Rules</div>
+                <div class="rules">
+                    Each row must contain the numbers from 1 to 9, without repetitions.
+                </div>
+                <div class="rules">
+                    Each column must contain the numbers from 1 to 9, without repetitions.
+                </div>
+                <div class="rules">
+                    The numbers can only occur once per block.
+                </div>
+                <div class="rules">
+                    The sum of every individual row, column and block must be equal to 45.
+                </div>
             </div>
-            <div class="rules">
-                Each column must contain the numbers from 1 to 9, without repetitions.
-            </div>
-            <div class="rules">
-                The numbers can only occur once per block.
-            </div>
-            <div class="rules">
-                The sum of every individual row, column and block must be equal to 45.
-            </div>
-
-            <div class="submit">
-                <button class="submit-button" id="submit-button">Submit Answer</button>
-            </div>
-            <div class="clear">
-                <button id="clear-board">Clear Board</button>
+            <div class="button-container">
+                <div class="submit">
+                    <button class="submit-button" id="submit-button">Submit Answer</button>
+                </div>
+                <div class="clear">
+                    <button id="clear-board">Clear Board</button>
+                </div>
             </div>
         </div>
-
     </div>
     <div class="modal" id="modal">
         <div class="modal-content">
