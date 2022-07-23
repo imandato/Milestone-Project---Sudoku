@@ -35,6 +35,18 @@ h1{
     box-shadow: 10px;
 }
 
+#easy-table{
+  display: block;
+}
+
+#medium-table{
+  display: none;
+}
+
+#hard-table{
+  display: none;
+}
+
 /* BruBaker: "Responsive Table Cells with Equal Height and Width - CSS Only": https://brubakerservices.org/responsive-table-cells-equal-height-width-css/ */
 /* Used the code above to create a square grid */
 td{
@@ -43,10 +55,6 @@ td{
     width: 3vw;
     height: 3vw;
 }  
-
-td:hover{
-  background-color: yellow;
-}
 
 /* INPUT CODE */
 
@@ -89,63 +97,24 @@ input[type=number] {
 }
 
 /* SUDOKU BOARD COLORING - INCLUDING HOVER AND CLICK BACKGROUND COLOR CHANGES */
-#input-1,#input-2,#input-3,#input-10,#input-11,#input-12,#input-19,#input-20,#input-21{
+.box1,.box2,.box3,.box10,.box11,.box12,.box19,.box20,.box21{
   background-color: #F2D4D7;
 }
 
-#input-1:hover,#input-2:hover,#input-3:hover,#input-10:hover,#input-11:hover,#input-12:hover,#input-19:hover,#input-20:hover,#input-21:hover{
-  background-color: lightgray;
-}
-#input-1:focus,#input-2:focus,#input-3:focus,#input-10:focus,#input-11:focus,#input-12:focus,#input-19:focus,#input-20:focus,#input-21:focus{
-  background-color: lightgray;
-}
-
-#input-7,#input-8,#input-9,#input-16,#input-17,#input-18,#input-25,#input-26,#input-27{
+.box7,.box8,.box9,.box16,.box17,.box18,.box25,.box26,.box27{
   background-color: #F2D4D7;
 }
 
-#input-7:hover,#input-8:hover,#input-9:hover,#input-16:hover,#input-17:hover,#input-18:hover,#input-25:hover,#input-26:hover,#input-27:hover{
-  background-color: lightgray;
-}
-
-#input-7:focus,#input-8:focus,#input-9:focus,#input-16:focus,#input-17:focus,#input-18:focus,#input-25:focus,#input-26:focus,#input-27:focus{
-  background-color: lightgray;
-}
-
-#input-31,#input-32,#input-33,#input-40,#input-41,#input-42,#input-49,#input-50,#input-51{
+.box31,.box32,.box33,.box40,.box41,.box42,.box49,.box50,.box51{
   background-color: #F2D4D7;
 }
 
-#input-31:hover,#input-32:hover,#input-33:hover,#input-40:hover,#input-41:hover,#input-42:hover,#input-49:hover,#input-50:hover,#input-51:hover{
-  background-color: lightgray;
-}
-
-#input-31:focus,#input-32:focus,#input-33:focus,#input-40:focus,#input-41:focus,#input-42:focus,#input-49:focus,#input-50:focus,#input-51:focus{
-  background-color: lightgray;
-}
-
-#input-55,#input-56,#input-57,#input-64,#input-65,#input-66,#input-73,#input-74,#input-75{
+.box55,.box56,.box57,.box64,.box65,.box66,.box73,.box74,.box75{
   background-color: #F2D4D7;
 }
 
-#input-55:hover,#input-56:hover,#input-57:hover,#input-64:hover,#input-65:hover,#input-66:hover,#input-73:hover,#input-74:hover,#input-75:hover{
-  background-color: lightgray;
-}
-
-#input-55:focus,#input-56:focus,#input-57:focus,#input-64:focus,#input-65:focus,#input-66:focus,#input-73:focus,#input-74:focus,#input-75:focus{
-  background-color: lightgray;
-}
-
-#input-61,#input-62,#input-63,#input-70,#input-71,#input-72,#input-79,#input-80,#input-81{
+.box61,.box62,.box63,.box70,.box71,.box72,.box79,.box80,.box81{
   background-color: #F2D4D7;
-}
-
-#input-61:hover,#input-62:hover,#input-63:hover,#input-70:hover,#input-71:hover,#input-72:hover,#input-79:hover,#input-80:hover,#input-81:hover{
-  background-color: lightgray;
-}
-
-#input-61:focus,#input-62:focus,#input-63:focus,#input-70:focus,#input-71:focus,#input-72:focus,#input-79:focus,#input-80:focus,#input-81:focus{
-  background-color: lightgray;
 }
 
 /* LEVELS CONTAINER AND BUTTONS */
@@ -166,7 +135,7 @@ input[type=number] {
   font-weight: bold;
 }
 
-.easyButton, .mediumButton, .hardButton{
+#easy-button{
   background-color: #F2D4D7;
 }
 
