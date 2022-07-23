@@ -19,8 +19,7 @@ function getValue(){
 function checkSolution(){
     let message = document.getElementById("message");
     // let dataArray = getValue()
-    console.log(JSON.stringify(inputArray))
-    console.log(JSON.stringify(solution))
+    
     if (JSON.stringify(solution) == JSON.stringify(inputArray)){
         console.log("you won!")
         message.innerHTML = "You Won!"
@@ -32,6 +31,7 @@ function checkSolution(){
         
     }
 }
+
 
 function clearBoard(){
     let userInput = document.getElementsByClassName("userinput")
